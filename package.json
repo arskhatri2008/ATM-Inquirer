@@ -1,7 +1,7 @@
 {
-  "name": "atm-inquirer",
+  "name": "arskhatri2008-atm-inquirer",
   "version": "1.0.0",
-  "description": "",
+  "description": "ATM cash withdraw and deposit transaction system",
   "main": "index.js",
   "type": "module",
   "bin": "index.js",
