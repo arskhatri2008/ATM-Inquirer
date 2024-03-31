@@ -64,7 +64,7 @@ if (pinAnswer.pinCode === pinCode) {
         message: "Select your fast cash withdraw",
         name: "fastCashWithdraw",
         type: "list",
-        choices: ["5000", "10000", "20000", "25000", "50000"],
+        choices: ["1000", "5000", "10000", "20000", "25000", "50000"],
       },
     ]);
 
