@@ -1,4 +1,4 @@
-#! usr/bin/env node
+#! /usr/bin/env node
 import inquirer from "inquirer";
 let myBalance = 100000;
 let pinCode = 1234;
@@ -11,6 +11,8 @@ let pinAnswer = await inquirer.prompt([
 ]);
 if (pinAnswer.pinCode === pinCode) {
     //   console.log("Correct Pin Code!");
+    console.log("Welcome to ATM");
+    console.log("Your Current Balance is: ", myBalance);
     let transaction = await inquirer.prompt([
         {
             message: "Select your transaction",
@@ -53,7 +55,7 @@ if (pinAnswer.pinCode === pinCode) {
                 message: "Select your fast cash withdraw",
                 name: "fastCashWithdraw",
                 type: "list",
-                choices: ["5000", "10000", "20000", "25000", "50000"],
+                choices: ["1000", "5000", "10000", "20000", "25000", "50000"],
             },
         ]);
         if (fastCashWithdraw.fastCashWithdraw <= myBalance) {

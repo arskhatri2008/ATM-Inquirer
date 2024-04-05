@@ -1,4 +1,4 @@
-#! usr/bin/env node
+#! /usr/bin/env node
 import inquirer from "inquirer";
 
 let myBalance = 100000;
@@ -14,6 +14,8 @@ let pinAnswer = await inquirer.prompt([
 
 if (pinAnswer.pinCode === pinCode) {
 //   console.log("Correct Pin Code!");
+  console.log("Welcome to ATM");
+  console.log("Your Current Balance is: ", myBalance)
 
   let transaction = await inquirer.prompt([
     {
